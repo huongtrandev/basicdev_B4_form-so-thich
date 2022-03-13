@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sở thích của bạn</title>
+    <style>
+      .head {
+        text-align: center;
+        background-color: brown;
+        color: yellow;
+        height: 30px;
+        padding-top: 15px;
+      }
+      .main {
+        width: 50%;
+        border-collapse: collapse;
+      }
+      tr {
+        height: 30px;
+      }
+      
+      .check {
+        color: orange;
+      }
+
+      .headline {
+        color: blue;
+        text-align: right;
+        width: 30%;
+      }
+
+      .shadow {
+        box-shadow: inset;
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <table class="main">      
+        <caption class="head">SỞ THÍCH CỦA BẠN</caption>
+        <td class="headline">Họ và tên</td>
+        <td><input type="text" size="40" name="name" class="shadow" /></td>
+      </tr>
+      <tr>
+        <td class="headline">Email</td>
+        <td><input type="text" size="40" name="email" /></td>
+      </tr>
+      <tr>
+        <td class="headline">Sở thích</td>
+        <td>
+          <table class="check">
+            <tr>
+              <td><input type="checkbox" name="interest" />Thể thao</td>
+              <td><input type="checkbox" name="interest" />Âm nhạc</td>
+              <td><input type="checkbox" name="interest" />Đọc sách</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="interest" />Lướt web</td>
+              <td><input type="checkbox" name="interest" />Chơi game</td>
+              <td><input type="checkbox" name="interest" />Điện ảnh</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="interest" />Du lịch</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <td>
+            <input type="submit" name="send" value="Gửi thông tin">
+            <input type="submit" name="send" value="Nhập lại">
+          </td>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
